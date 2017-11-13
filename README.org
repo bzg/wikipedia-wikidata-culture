@@ -1,5 +1,7 @@
 #+TITLE: Wikipédia, Wikidata et les données culturelles
 
+* Wikipédia, Wikidata et les données culturelles
+
 Mise à jour : <2017-11-13 lun.>
 
 Introduction à Wikipédia, Wikidata et exploration des données culturelles.

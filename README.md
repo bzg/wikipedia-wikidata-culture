@@ -1,3 +1,7 @@
+
+
+# Wikipédia, Wikidata et les données culturelles
+
 Mise à jour : <span class="timestamp-wrapper"><span class="timestamp">&lt;2017-11-13 lun.&gt;</span></span>
 
 Introduction à Wikipédia, Wikidata et exploration des données culturelles.
