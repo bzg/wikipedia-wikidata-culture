@@ -3,23 +3,30 @@
 #+email: bzg@bzg.fr
 
 #+OPTIONS: reveal_center:nil reveal_progress:t reveal_history:nil reveal_control:t
-#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_rolling_links:nil reveal_keyboard:t reveal_overview:t num:nil
 #+OPTIONS: reveal_width:1200 reveal_height:800
 #+OPTIONS: toc:1
 #+REVEAL_MARGIN: 0.1
 #+REVEAL_MIN_SCALE: 0.5
-#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_MAX_SCALE: 1.5
 #+REVEAL_TRANS: fade
-#+REVEAL_THEME: serif
+#+REVEAL_THEME: black
 #+REVEAL_HLEVEL: 2
-# #+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Org-Reveal Introduction.">
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Org-Reveal Introduction.">
 # #+REVEAL_POSTAMBLE: <p> Created by yjwen. </p>
-# #+REVEAL_PLUGINS: (markdown notes)
-# #+REVEAL_EXTRA_CSS: ./local.css
+#+REVEAL_PLUGINS: (notes)
+#+REVEAL_EXTRA_CSS: ./local.css
 
 * Présentation de Wikipédia
+  :PROPERTIES:
+  :ID:       cffddfab-e208-4d07-b947-587fa36ccb4b
+  :PUBDATE:  <2019-02-10 dim. 17:59>
+  :END:
 
 ** Les origines de Wikipédia
+   :PROPERTIES:
+   :ID:       30494481-33c4-49cc-8036-475c2d97e5e6
+   :END:
 
 # - GNU :: GNU’s not Unix
 
@@ -32,8 +39,11 @@
 
 - Citizendium :: projet d’encyclopédie en ligne lancé en 2006 par
      L. Sanger.
-
+     
 ** Le but de Wikipédia
+   :PROPERTIES:
+   :ID:       c60f87fb-4ef6-4816-a3ae-49e35f5b37cf
+   :END:
 
 Une encyclopédie libre et collaborative pour *collecter* et *diffuser*
 l’ensemble des connaissances disponibles.
@@ -42,39 +52,54 @@ Wikipédia n’est pas un espace de *production* de la connaissance, elle
 reste une source secondaire.
 
 ** Les principes fondateurs de Wikipédia
+   :PROPERTIES:
+   :ID:       22a2d88b-93dc-4887-986c-ff37c8a98a15
+   :END:
 
 - Wikipédia est une encyclopédie
 - Wikipédia recherche la neutralité de point de vue
 - Wikipédia est publiée sous licence libre
 - Wikipédia est un projet collaboratif qui suit des règles de savoir-vivre
-- Wikipédia n’a pas d’autres règles fixes : *be bold* !
+- Wikipédia n’a pas d’autres règles fixes : *be bold* !
 
 ** Fonctionnement basique de Wikipédia
+   :PROPERTIES:
+   :ID:       b1bbbcae-44ef-4414-afee-c44fc9922293
+   :END:
 
 - La modération *a posteriori* (exemple).
 
 - Les administrateurs n’ont qu’un rôle *technique*, pas *éditorial*.
 
 ** Quelques chiffres sur la wikipédia francophone
+   :PROPERTIES:
+   :ID:       d33134dd-6d55-45c9-8740-4a5149fb647a
+   :END:
 
-Chiffre à la date du 8 novembre 2017 :
+Chiffres à la date du 8 novembre 2017 :
 
-- Nombre de comptes : 2 930 291
-- Nombre de contributeurs actifs : 16720 avec 1 modif < 30 jours
-- Nombre de contributeurs actifs :  5000 avec 5 modif < 30 jours
-- Nombre de contributeurs actifs :   800 avec 100 modif < 30 jours
-- Nombre d’administrateurs : 163
-- Nombre d’articles : 1 926 396
+- Nombre de comptes : 2 930 291
+- Nombre de contributeurs actifs : 16720 avec 1 modif < 30 jours
+- Nombre de contributeurs actifs :  5000 avec 5 modif < 30 jours
+- Nombre de contributeurs actifs :   800 avec 100 modif < 30 jours
+- Nombre d’administrateurs : 163
+- Nombre d’articles : 1 926 396
 
 Wikipédia est le cinquième site le plus visité.
 
-Source : https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Statistiques
+Source : https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Statistiques
 
 ** Où sont hébergées les données ?
+   :PROPERTIES:
+   :ID:       b9d79e3e-c2ef-421f-82e1-187c020c3a9d
+   :END:
 
 Aux États-Unis, par la Wikimedia Foundation.
 
 ** Quelle est la différence entre Wikipédia et Wikimedia ?
+   :PROPERTIES:
+   :ID:       8a63ec2b-f1c0-455e-8290-2671eb7ff95a
+   :END:
 
 Wikipédia est l’un des projets Wikimédia.
 
@@ -82,6 +107,9 @@ Wikipédia est l’un des projets Wikimédia.
 fondation américaine et des « chapitres » régionaux.
 
 ** Quels sont les autres projets ?
+   :PROPERTIES:
+   :ID:       565901a3-2e99-4591-912b-cf4295410ad2
+   :END:
 
 - Wikimedia Commons
 - Wikidata
@@ -95,10 +123,16 @@ fondation américaine et des « chapitres » régionaux.
 Voir la [[https://wikimediafoundation.org/wiki/Nos_projets][liste des projets]].
 
 ** Comment éditer Wikipédia ?
+   :PROPERTIES:
+   :ID:       f4ecf5e6-2413-4dc8-ad9f-3ce0998f2a60
+   :END:
 
 [Démonstration]
 
-** Quelques concepts
+** Quelques concepts (1/2)
+   :PROPERTIES:
+   :ID:       2984f610-bc92-4a81-9233-d78bfe82d830
+   :END:
 
 - Les wikiprojets (ou projets) :: https://fr.wikipedia.org/wiki/Projet:Monuments_historiques
 
@@ -108,17 +142,24 @@ Voir la [[https://wikimediafoundation.org/wiki/Nos_projets][liste des projets]].
 
 - Les modèles :: {{Portail|informatique|monuments historiques}}
 
+** Quelques concepts (2/2)
+   :PROPERTIES:
+   :END:
+
 - Les infobox :: les encarts avec des données structurées
 
 - Les liens interwikis :: un lien entre deux projets, par exemple
-     entre le wiktionnaire et wikipédia.  Voir [[https://fr.wikipedia.org/wiki/Aide:Lien_interwiki][la page de
-     documentation]] sur wikipédia.
+  entre le wiktionnaire et wikipédia.  Voir [[https://fr.wikipedia.org/wiki/Aide:Lien_interwiki][la page de documentation]]
+  sur wikipédia.
 
 - Les liens interlangues :: un lien d’un projet (ex: wikipédia) dans
-     une langue vers le même projet (wikipédia) dans une autre langue.
-     Voir [[https://fr.wikipedia.org/wiki/Aide:Lien_interlangue][la page de documentation]] sur wikipédia.
+  une langue vers le même projet (wikipédia) dans une autre langue.
+  Voir [[https://fr.wikipedia.org/wiki/Aide:Lien_interlangue][la page de documentation]] sur wikipédia.
 
 ** Exemple de contenu littéral d’une infobox 
+   :PROPERTIES:
+   :ID:       b513f15d-9dd0-4209-8eeb-5e8a2a1195c6
+   :END:
 
 : {{Infobox Jeu de données
 : | nom = 
@@ -132,18 +173,32 @@ Voir la [[https://wikimediafoundation.org/wiki/Nos_projets][liste des projets]].
 : }}
 
 * Les données culturelles sur Wikipédia
+  :PROPERTIES:
+  :ID:       42e2ee43-8661-4463-b88a-1630bdf15041
+  :PUBDATE:  <2019-02-10 dim. 17:59>
+  :END:
 
 Statistiques ?
 
 https://fr.wikipedia.org/wiki/Projet:Monuments_historiques
 
 * Présentation de Wikidata
+  :PROPERTIES:
+  :ID:       97149576-7d30-465a-b96c-070756856a6b
+  :PUBDATE:  <2019-02-10 dim. 17:59>
+  :END:
 
 ** Le lien wikidata sur les pages de Wikipédia
+   :PROPERTIES:
+   :ID:       f0f512ab-0784-4536-ab38-738f3ff05588
+   :END:
 
 Voir dans la colonne de gauche : [[https://fr.wikipedia.org/w/index.php?title=Victor_Hugo][Victor Hugo]]
 
 ** Problèmes à résoudre
+   :PROPERTIES:
+   :ID:       cb0ad9df-d479-4038-87df-24aac1a02267
+   :END:
 
 - Problème #1 :: Comment tirer parti des connaissances
      semi-structurées de Wikipédia ?
@@ -155,7 +210,10 @@ Voir dans la colonne de gauche : [[https://fr.wikipedia.org/w/index.php?title=Vi
 
 - Problème #2 :: Comment interroger ces données ?
 
-** Introduction au web sémantique
+** Web sémantique ?
+   :PROPERTIES:
+   :ID:       f6ec5317-ebc5-420d-83c4-ca3d12fb8bbf
+   :END:
 
 - Langage naturel : Sujet / Verbe / Complément
 
@@ -196,6 +254,9 @@ Voir dans la colonne de gauche : [[https://fr.wikipedia.org/w/index.php?title=Vi
     scientifique.
 
 ** Exemple de code HTML
+   :PROPERTIES:
+   :ID:       ef9fb83e-a582-4d7e-8eec-84bc8b64c161
+   :END:
 
 #+begin_src
 <html>
@@ -212,20 +273,21 @@ Voir dans la colonne de gauche : [[https://fr.wikipedia.org/w/index.php?title=Vi
 
 ** Exemple de code HTML « sémantisé »
 
-#+begin_export html
-<html>
-<head>
-  ...
-</head>
-<body vocab="http://purl.org/dc/terms/">
-  ...
-  <h2 property="title">The Trouble with Bob</h2>
-  <p>Date: <span property="created">2011-09-10</span></p>
-  ...
-</body>
-#+end_export
+: <html>
+: <head>
+:   ...
+: </head>
+: <body vocab="http://purl.org/dc/terms/">
+:   ...
+:   <h2 property="title">The Trouble with Bob</h2>
+:   <p>Date: <span property="created">2011-09-10</span></p>
+:   ...
+: </body>
 
 ** Wikidata est constituée de *déclarations* sur des *entités*
+   :PROPERTIES:
+   :ID:       a385b02a-9a2c-410c-89af-a07161e89669
+   :END:
 
 Quelques définitions :
 
@@ -249,19 +311,21 @@ glossaire des termes.
 Exemple Palissy.
 
 ** L’évolution de Wikidata
+   :PROPERTIES:
+   :ID:       9371f80d-7ef7-4f95-b40e-b60aa87e9f36
+   :END:
 
 - Ajout d’entités
 - Ajout de propriétés
 - Histoire de l’évolution des propriétés
 
 ** L’accès aux données de Wikidata
+   :PROPERTIES:
+   :ID:       23a80855-3815-4493-ae3f-a5fc1aae8127
+   :END:
 
 - Via l’API (https://www.wikidata.org/w/api.php)
-
 - Via le SparQL endpoint
-
-Exemples : 
-
 - [[https://query.wikidata.org/#%2523Encore%2520plus%2520de%2520chats%252C%2520avec%2520des%2520images%250A%2523added%2520before%25202016-10%250A%250A%2523defaultView%253AImageGrid%250ASELECT%2520%253Fitem%2520%253FitemLabel%2520%253Fpic%250AWHERE%250A%257B%250A%2509%253Fitem%2520wdt%253AP31%2520wd%253AQ146%2520.%250A%2509OPTIONAL%2520%257B%250A%2509%2509%253Fitem%2520wdt%253AP18%2520%253Fpic%250A%2509%257D%250A%2509SERVICE%2520wikibase%253Alabel%2520%257B%2520bd%253AserviceParam%2520wikibase%253Alanguage%2520%2522%255BAUTO_LANGUAGE%255D%252Cen%2522%2520%257D%250A%257D][Chats avec photos]]
 - [[https://query.wikidata.org/#%2523Monuments%2520historiques%2520in%2520Loire-Atlantique%250A%2523added%2520before%25202016-10%250A%250ASELECT%2520DISTINCT%250A%2520%2520%253Fitem%250A%2520%2520%253FitemLabel%250A%2520%2520%253FcommuneLabel%250A%2520%2520%2528group_concat%2528distinct%2520%253Fmerimee%2520%253B%2520separator%2520%253D%2520%2522%252C%2520%2522%2529%2520as%2520%253Fmerimee%2529%250A%2520%2520%253Fcoords%250A%2520%2520%253Fimage%250AWHERE%250A%257B%250A%2520%2520%257B%250A%2520%2520%2520%2520SELECT%2520DISTINCT%2520%253Fitem%2520%253Fmerimee%2520WHERE%2520%257B%250A%2520%2520%2520%2520%2520%2520%253Fitem%2520wdt%253AP1435%252Fwdt%253AP279%252a%2520wd%253AQ916475%2520.%250A%2520%2520%2520%2520%2520%2520%253Fitem%2520p%253AP1435%2520%253Fheritage_statement%2520.%250A%2520%2520%2520%2520%2520%2520FILTER%2520NOT%2520EXISTS%2520%257B%2520%253Fheritage_statement%2520pq%253AP582%2520%253Fend%2520.%2520%257D%250A%2520%2520%2520%2520%2520%2520%253Fitem%2520wdt%253AP380%2520%253Fmerimee.%250A%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520ORDER%2520BY%2520%253Fmerimee%250A%2520%2520%257D%250A%2520%2520%253Fitem%2520wdt%253AP131%252Fwdt%253AP131%252a%2520wd%253AQ3068%2520.%250A%2520%2520%253Fitem%2520wdt%253AP131%2520%253Fcommune%2520.%250A%2520%2520OPTIONAL%2520%257B%2520%253Fitem%2520wdt%253AP625%2520%253Fcoords%2520.%2520%257D%250A%2520%2520OPTIONAL%2520%257B%2520%253Fitem%2520wdt%253AP18%2520%253Fimage%2520.%2520%257D%250A%2520%2520SERVICE%2520wikibase%253Alabel%2520%257B%2520bd%253AserviceParam%2520wikibase%253Alanguage%2520%2522fr%2522%2520.%2520%257D%250A%257D%250AGROUP%2520BY%2520%253Fitem%2520%253FitemLabel%2520%253FcommuneLabel%2520%253Fcoords%2520%253Fimage%250AORDER%2520BY%2520%253FcommuneLabel%2520%253FitemLabel][Monuments historiques (Mérimée) de Loire-Atlantique]]
 
@@ -270,9 +334,19 @@ Rechercher toutes les [[https://www.wikidata.org/w/index.php?search=date&title=S
 Source : https://www.wikidata.org/wiki/Wikidata:Data_access/fr
 
 * Les données culturelles dans les projets Wikimedia
+  :PROPERTIES:
+  :ID:       184cbb77-5f6d-492d-b4e5-780ee1e43bef
+  :PUBDATE:  <2019-02-10 dim. 17:59>
+  :END:
 
 ** http://www.zone47.com/crotos/
+   :PROPERTIES:
+   :ID:       69844616-9a45-4d55-94c8-0cf1ec4ba37f
+   :END:
 ** Les données culturelles sur Wiki Loves Monuments
+   :PROPERTIES:
+   :ID:       8540d350-5819-4ac2-9259-6a84809093b5
+   :END:
 
 https://wikilovesmonuments.fr
 
@@ -280,10 +354,16 @@ Outil d’exploration et d’édition des monuments renseignés lors des
 concours WLM : https://tools.wmflabs.org/monumental/#/object/2981
 
 ** Les données culturelles sur Wikipédia
+   :PROPERTIES:
+   :ID:       8258e4cc-688e-4d85-aaa0-f886fa8bce25
+   :END:
 
 Exemple : Le wikiprojet [[https://fr.wikipedia.org/wiki/Projet:Monuments_historiques][monument historique]].
 
 ** Les données culturelles sur Wikidata
+   :PROPERTIES:
+   :ID:       c06c69b4-aae9-4f36-ae19-98d8779ac537
+   :END:
 
 "80% des données" (cf. présentation Wikidatacon 2017)
 
@@ -313,23 +393,36 @@ https://www.wikidata.org/wiki/Wikidata:WikiProject_sum_of_all_paintings/Catalog
 : SELECT ?item ?catcode WHERE { ?item p:P528 [ pq:P972 wd:Q35556353 ; ps:P528 ?catcode]. } ORDER BY xsd:integer(?catcode)
 
 * Quel est l’intérêt de Wikidata pour le MC ?
+  :PROPERTIES:
+  :ID:       db0f56ad-6104-4f14-9229-e4b5d4fe085d
+  :PUBDATE:  <2019-02-10 dim. 17:59>
+  :END:
 
 - Wikidata permet d’exposer les données du MC plus largement.
 
-- Wikidata permet de faire des recherches (de la recherche ?) :
+- Wikidata permet de faire des recherches (de la recherche ?) :
   exemple, les peintres [[https://www.wikidata.org/wiki/Wikidata:WikiProject_sum_of_all_paintings/Top_creators_by_number_of_paintings%0A][les plus prolifiques]].
 
-- Wikidata peut être utilisé pour obtenir des traductions des
-  labels existants.
+- Wikidata peut être utilisé pour obtenir des traductions des labels
+  existants.
 
 * Quel est l’intérêt des données du ministère de la culture pour Wikidata ?
+  :PROPERTIES:
+  :ID:       fbe1673b-1c5a-4f7b-993c-a960bfb9131c
+  :PUBDATE:  <2019-02-10 dim. 17:59>
+  :END:
 
 - Le ministère de la culture peut contribuer à l’ajout d’entités.
 
 - Le ministère de la culture peut contribuer à l’ajout de propriétés.
 
-- Le ministère de la culture peut enrichir les données existantes (ex: Palissy).
+- Le ministère de la culture peut enrichir les données existantes (ex:
+  Palissy).
 
 * Ressources
+  :PROPERTIES:
+  :ID:       bfc3db4d-ef2b-4429-b041-42122ee50802
+  :PUBDATE:  <2019-02-10 dim. 17:59>
+  :END:
 
 - https://fr.slideshare.net/_Emw/an-ambitious-wikidata-tutorial
