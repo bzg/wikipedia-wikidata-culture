@@ -217,41 +217,47 @@ Voir dans la colonne de gauche : [[https://fr.wikipedia.org/w/index.php?title=Vi
 
 - Langage naturel : Sujet / Verbe / Complément
 
-- Prédicat ? (voir la définition du [[http://www.cnrtl.fr/definition/pr%25C3%25A9dicat][cnrtl]])
+** Les acceptions de « prédicat »
+   :PROPERTIES:
+   :END:
 
-  - Aristote : le prédicat est ce que l’on dit du sujet.  Par
-    exemple : Socrate *mange des pommes* ou Socrate *est un homme*.
-    C’était la notion de grammaire en jeu dans le débat de 2017 sur
-    l’évolution des programmes d’enseignement (voir ce [[https://twitter.com/MichelLussault/status/819269828611624960][tweet]]).
+- Aristote : le prédicat est ce que l’on dit du sujet.  Par
+  exemple : Socrate *mange des pommes* ou Socrate *est un homme*.
+  C’était la notion de grammaire en jeu dans le débat de 2017 sur
+  l’évolution des programmes d’enseignement (voir ce [[https://twitter.com/MichelLussault/status/819269828611624960][tweet]]).
 
-  - Philosophie scolastique : le prédicat désigne une *qualité* qui peut
-    être attribué à un sujet via une *copule*, le verbe « être ».  Par
-    exemple : Socrate est *mortel*.  Trois notions se confondent :
-    prédicat, qualité et « attribut du sujet ».
+- Philosophie scolastique : le prédicat désigne une *qualité* qui peut
+  être attribué à un sujet via une *copule*, le verbe « être ».  Par
+  exemple : Socrate est *mortel*.  Trois notions se confondent :
+  prédicat, qualité et « attribut du sujet ».
 
-  - Logique : après le calcul des propositions (si p et q sont vraies,
-    alors "p et q" est vrai, etc.) apparaît le calcul des Prédicats :
-    « Tout x est gentil » : \forall x gentil(x) et « Il existe un x tel que
-    pour tout y, x est ami avec y » : \exists x \forall y amis(x,y)
+- Logique : après le calcul des propositions (si p et q sont vraies,
+  alors "p et q" est vrai, etc.) apparaît le calcul des Prédicats :
+  « Tout x est gentil » : \forall x gentil(x) et « Il existe un x tel que
+  pour tout y, x est ami avec y » : \exists x \forall y amis(x,y)
 
-    - "est gentil" = un prédicat unaire
-    - "sont amis" = un prédicat binaire
+  - "est gentil" = un prédicat unaire
+  - "sont amis" = un prédicat binaire
 
-  - En web sémantique, une affirmation est un *prédicat binaire* (voir
-    cette [[https://www.u-picardie.fr/~furst/docs/1-Web_Semantique_RDF.pdf][présentation du RDF]])
+** Un « prédicat » en web sémantique
+   :PROPERTIES:
+   :END:
 
-    Par exemple : est_Construit_En(Q-ndp,Q-ndp2)
+- En web sémantique, une affirmation est un *prédicat binaire* (voir
+  cette [[https://www.u-picardie.fr/~furst/docs/1-Web_Semantique_RDF.pdf][présentation du RDF]])
 
-    On parle aussi de « triplet », et on retrouve l’écriture plus
-    naturelle : L’église (Sujet) est construite en (Prédicat) 1912
-    (Objet).  Le prédicat associe le sujet et l’objet.
+  Par exemple : est_Construit_En(Q-ndp,Q-ndp2)
 
-  - Wikidata utilise un vocabulaire différent : au lieu de =Sujet /
-    Prédicat / Objet=, nous avons =Item (Q) / Property (P) / Value=.
+  On parle aussi de « triplet », et on retrouve l’écriture plus
+  naturelle : L’église (Sujet) est construite en (Prédicat) 1912
+  (Objet).  Le prédicat associe le sujet et l’objet.
 
-    Par exemple, l’affirmation : {Einstein(Q), occupation(P),
-    scientifique(V)} disant que l’occupation d’Einstein est d’être un
-    scientifique.
+- Wikidata utilise un vocabulaire différent : au lieu de =Sujet /
+  Prédicat / Objet=, nous avons =Item (Q) / Property (P) / Value=.
+
+  Par exemple, l’affirmation : {Einstein(Q), occupation(P),
+  scientifique(V)} disant que l’occupation d’Einstein est d’être un
+  scientifique.
 
 ** Exemple de code HTML
    :PROPERTIES:
