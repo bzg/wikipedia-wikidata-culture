@@ -1,19 +1,22 @@
 #+TITLE: Wikipédia, wikidata et les données culturelles
 #+AUTHOR: Bastien Guerry
 #+email: bzg@bzg.fr
+#+date: Novembre 2017
 
+#+options: html-postamble:nil html-preamble:nil
 #+OPTIONS: reveal_center:nil reveal_progress:t reveal_history:nil reveal_control:t
 #+OPTIONS: reveal_rolling_links:nil reveal_keyboard:t reveal_overview:t num:nil
-#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: reveal_width:1400 reveal_height:900
 #+OPTIONS: toc:1
 #+REVEAL_MARGIN: 0.1
 #+REVEAL_MIN_SCALE: 0.5
 #+REVEAL_MAX_SCALE: 1.5
 #+REVEAL_TRANS: fade
-#+REVEAL_THEME: moon
-#+REVEAL_HLEVEL: 2
+#+REVEAL_THEME: simple
+#+REVEAL_HLEVEL: 1
 #+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Org-Reveal Introduction.">
-# #+REVEAL_POSTAMBLE: <p> Created by yjwen. </p>
+#+REVEAL_PREAMBLE:
+#+REVEAL_POSTAMBLE:
 #+REVEAL_PLUGINS: (notes)
 #+REVEAL_EXTRA_CSS: ./local.css
 
@@ -30,26 +33,20 @@
 
 # - GNU :: GNU’s not Unix
 
-- GNUpedia :: proposé en 1999 par Stallman et lancé en 2001.
-
-- Nupedia :: fondée par L. Sanger et J. Wales en 2000, fermée en 2003.
-
-- Wikipédia :: mis en place par L. Sanger en janvier 2001 intialement
-     pour servir de sas d’entrée pour Nupédia.
-
-- Citizendium :: projet d’encyclopédie en ligne lancé en 2006 par
-     L. Sanger.
+- *GNUpedia* : proposé en 1999 par Stallman et lancé en 2001.
+- *Nupedia* : fondée par L. Sanger et J. Wales en 2000, fermée en 2003.
+- *Wikipédia* : mis en place par L. Sanger en janvier 2001 intialement pour servir de sas d’entrée pour Nupédia.
+- *Citizendium* : projet d’encyclopédie en ligne lancé en 2006 par L. Sanger.
      
 ** Le but de Wikipédia
    :PROPERTIES:
-   :ID:       c60f87fb-4ef6-4816-a3ae-49e35f5b37cf
+   :ID: c60f87fb-4ef6-4816-a3ae-49e35f5b37cf
    :END:
 
-Une encyclopédie libre et collaborative pour *collecter* et *diffuser*
-l’ensemble des connaissances disponibles.
-
-Wikipédia n’est pas un espace de *production* de la connaissance, elle
-reste une source secondaire.
+- Une encyclopédie libre et collaborative pour *collecter* et *diffuser*
+  l’ensemble des connaissances disponibles.
+- Wikipédia n’est pas un espace de *production* de la connaissance, elle
+  reste une source secondaire.
 
 ** Les principes fondateurs de Wikipédia
    :PROPERTIES:
@@ -68,7 +65,6 @@ reste une source secondaire.
    :END:
 
 - La modération *a posteriori* (exemple).
-
 - Les administrateurs n’ont qu’un rôle *technique*, pas *éditorial*.
 
 ** Quelques chiffres sur la wikipédia francophone
@@ -85,28 +81,26 @@ Chiffres à la date du 8 novembre 2017 :
 - Nombre d’administrateurs : 163
 - Nombre d’articles : 1 926 396
 
-Wikipédia est le cinquième site le plus visité.
+Wikipédia est le cinquième site le plus visité ([[https://fr.wikipedia.org/wiki/Wikip%25C3%25A9dia:Statistiques][source]]).
 
-Source : https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Statistiques
-
-** Où sont hébergées les données ?
+** Où sont hébergées les données ?
    :PROPERTIES:
    :ID:       b9d79e3e-c2ef-421f-82e1-187c020c3a9d
    :END:
 
 Aux États-Unis, par la Wikimedia Foundation.
 
-** Quelle est la différence entre Wikipédia et Wikimedia ?
+** Quelle est la différence entre Wikipédia et Wikimedia ?
    :PROPERTIES:
    :ID:       8a63ec2b-f1c0-455e-8290-2671eb7ff95a
    :END:
 
-Wikipédia est l’un des projets Wikimédia.
+- Wikipédia est l’un des projets Wikimédia.
 
-« Wikimedia » est le nom du mouvement réunissant les salariés de la
-fondation américaine et des « chapitres » régionaux.
+- « Wikimedia » est le nom du mouvement réunissant les salariés de la
+  fondation américaine et des « chapitres » régionaux.
 
-** Quels sont les autres projets ?
+** Quels sont les autres projets ?
    :PROPERTIES:
    :ID:       565901a3-2e99-4591-912b-cf4295410ad2
    :END:
@@ -119,10 +113,9 @@ fondation américaine et des « chapitres » régionaux.
 - Wikiquote
 - Wikivoyage
 - ...
+- Voir la [[https://wikimediafoundation.org/wiki/Nos_projets][liste des projets]].
 
-Voir la [[https://wikimediafoundation.org/wiki/Nos_projets][liste des projets]].
-
-** Comment éditer Wikipédia ?
+** Comment éditer Wikipédia ?
    :PROPERTIES:
    :ID:       f4ecf5e6-2413-4dc8-ad9f-3ce0998f2a60
    :END:
@@ -134,25 +127,22 @@ Voir la [[https://wikimediafoundation.org/wiki/Nos_projets][liste des projets]].
    :ID:       2984f610-bc92-4a81-9233-d78bfe82d830
    :END:
 
-- Les wikiprojets (ou projets) :: https://fr.wikipedia.org/wiki/Projet:Monuments_historiques
-
-- Les portails :: https://fr.wikipedia.org/wiki/Portail:Monuments_historiques
-
-- Les catégories :: [ [Catégorie:Base de données sur Internet]]
-
-- Les modèles :: {{Portail|informatique|monuments historiques}}
+- Les wikiprojets (ou projets) : https://fr.wikipedia.org/wiki/Projet:Monuments_historiques
+- Les portails : https://fr.wikipedia.org/wiki/Portail:Monuments_historiques
+- Les catégories : [ [Catégorie:Base de données sur Internet]]
+- Les modèles : {{Portail|informatique|monuments historiques}}
 
 ** Quelques concepts (2/2)
    :PROPERTIES:
    :END:
 
-- Les infobox :: les encarts avec des données structurées
+- *Les infobox* : les encarts avec des données structurées
 
-- Les liens interwikis :: un lien entre deux projets, par exemple
-  entre le wiktionnaire et wikipédia.  Voir [[https://fr.wikipedia.org/wiki/Aide:Lien_interwiki][la page de documentation]]
-  sur wikipédia.
+- *Les liens interwikis* : un lien entre deux projets, par exemple entre
+  le wiktionnaire et wikipédia.  Voir [[https://fr.wikipedia.org/wiki/Aide:Lien_interwiki][la page de documentation]] sur
+  wikipédia.
 
-- Les liens interlangues :: un lien d’un projet (ex: wikipédia) dans
+- *Les liens interlangues* : un lien d’un projet (ex: wikipédia) dans
   une langue vers le même projet (wikipédia) dans une autre langue.
   Voir [[https://fr.wikipedia.org/wiki/Aide:Lien_interlangue][la page de documentation]] sur wikipédia.
 
@@ -178,15 +168,16 @@ Voir la [[https://wikimediafoundation.org/wiki/Nos_projets][liste des projets]].
   :PUBDATE:  <2019-02-10 dim. 17:59>
   :END:
 
-Statistiques ?
-
-https://fr.wikipedia.org/wiki/Projet:Monuments_historiques
+- Statistiques sur le projet « Monuments historiques » :
+  https://fr.wikipedia.org/wiki/Projet:Monuments_historiques
 
 * Présentation de Wikidata
   :PROPERTIES:
   :ID:       97149576-7d30-465a-b96c-070756856a6b
   :PUBDATE:  <2019-02-10 dim. 17:59>
   :END:
+
+... faire défiler vers le bas !
 
 ** Le lien wikidata sur les pages de Wikipédia
    :PROPERTIES:
@@ -201,16 +192,16 @@ Voir dans la colonne de gauche : [[https://fr.wikipedia.org/w/index.php?title=Vi
    :END:
 
 - Problème #1 :: Comment tirer parti des connaissances
-     semi-structurées de Wikipédia ?
+     semi-structurées de Wikipédia ?
 
   - Les infoboxes
   - Les liens interwikis
   - Les liens interlangue
   - ...
 
-- Problème #2 :: Comment interroger ces données ?
+- Problème #2 :: Comment interroger ces données ?
 
-** Web sémantique ?
+** Web sémantique ?
    :PROPERTIES:
    :ID:       f6ec5317-ebc5-420d-83c4-ca3d12fb8bbf
    :END:
@@ -312,7 +303,7 @@ normaux ou dépréciés.
 Voir https://www.wikidata.org/wiki/Wikidata:Glossary/fr pour tout le
 glossaire des termes.
 
-** COMMENT Quelle différence avec des données « plates » ?
+** COMMENT Quelle différence avec des données « plates » ?
 
 Exemple Palissy.
 
@@ -371,12 +362,9 @@ Exemple : Le wikiprojet [[https://fr.wikipedia.org/wiki/Projet:Monuments_histori
    :ID:       c06c69b4-aae9-4f36-ae19-98d8779ac537
    :END:
 
-"80% des données" (cf. présentation Wikidatacon 2017)
-
-Exemple de mise en forme des données
-https://tools.wmflabs.org/reasonator/?q=Q1339
-
-Exemple de requête :
+- "80% des données" (cf. présentation Wikidatacon 2017)
+- Exemple de mise en forme des données sur [[https://tools.wmflabs.org/reasonator/?q=Q1339][reasonator]].
+- Exemple de requête :
 
 : #Paintings made on places that are not a work location of Van Gogh
 : SELECT ?item ?inception ?location ?image
@@ -390,11 +378,9 @@ Exemple de requête :
 :               ?location wdt:P131 ?superlocation} .
 :       }
 
-Exemple de réutilisation : http://histropedia.com/timeline
-
-Voir la [[https://query.wikidata.org/#SELECT%2520%253Fitem%2520%253FitemLabel%2520%253Fid%2520WHERE%2520%257B%250A%2509%253Fitem%2520wdt%253AP481%2520%253Fid%2520.%250A%2509SERVICE%2520wikibase%253Alabel%2520%257B%2520bd%253AserviceParam%2520wikibase%253Alanguage%2520%2522fr%2522%2520%257D%250A%257D][liste des données ayant un identifiant Palissy.]]
-
-https://www.wikidata.org/wiki/Wikidata:WikiProject_sum_of_all_paintings/Catalog
+- Exemple de réutilisation : http://histropedia.com/timeline
+- Voir la [[https://query.wikidata.org/#SELECT%2520%253Fitem%2520%253FitemLabel%2520%253Fid%2520WHERE%2520%257B%250A%2509%253Fitem%2520wdt%253AP481%2520%253Fid%2520.%250A%2509SERVICE%2520wikibase%253Alabel%2520%257B%2520bd%253AserviceParam%2520wikibase%253Alanguage%2520%2522fr%2522%2520%257D%250A%257D][liste des données ayant un identifiant Palissy.]]
+- https://www.wikidata.org/wiki/Wikidata:WikiProject_sum_of_all_paintings/Catalog
 
 : SELECT ?item ?catcode WHERE { ?item p:P528 [ pq:P972 wd:Q35556353 ; ps:P528 ?catcode]. } ORDER BY xsd:integer(?catcode)
 
@@ -405,30 +391,21 @@ https://www.wikidata.org/wiki/Wikidata:WikiProject_sum_of_all_paintings/Catalog
   :END:
 
 - Wikidata permet d’exposer les données du MC plus largement.
-
-- Wikidata permet de faire des recherches (de la recherche ?) :
-  exemple, les peintres [[https://www.wikidata.org/wiki/Wikidata:WikiProject_sum_of_all_paintings/Top_creators_by_number_of_paintings%0A][les plus prolifiques]].
-
-- Wikidata peut être utilisé pour obtenir des traductions des labels
-  existants.
+- Wikidata permet de faire des recherches (de la recherche ?) : exemple, les peintres [[https://www.wikidata.org/wiki/Wikidata:WikiProject_sum_of_all_paintings/Top_creators_by_number_of_paintings%0A][les plus prolifiques]].
+- Wikidata peut être utilisé pour obtenir des traductions des labels existants.
 
 * Quel est l’intérêt des données du ministère de la culture pour Wikidata ?
   :PROPERTIES:
-  :ID:       fbe1673b-1c5a-4f7b-993c-a960bfb9131c
-  :PUBDATE:  <2019-02-10 dim. 17:59>
+  :ID: fbe1673b-1c5a-4f7b-993c-a960bfb9131c :PUBDATE: <2019-02-10 dim. 17:59>
   :END:
 
 - Le ministère de la culture peut contribuer à l’ajout d’entités.
-
 - Le ministère de la culture peut contribuer à l’ajout de propriétés.
-
-- Le ministère de la culture peut enrichir les données existantes (ex:
-  Palissy).
+- Le ministère de la culture peut enrichir les données existantes (ex: Palissy).
 
 * Ressources
   :PROPERTIES:
-  :ID:       bfc3db4d-ef2b-4429-b041-42122ee50802
-  :PUBDATE:  <2019-02-10 dim. 17:59>
+  :ID: bfc3db4d-ef2b-4429-b041-42122ee50802 
   :END:
 
 - https://fr.slideshare.net/_Emw/an-ambitious-wikidata-tutorial

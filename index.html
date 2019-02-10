@@ -9,7 +9,7 @@
 </style>
 <link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
 
-<link rel="stylesheet" href="./reveal.js/css/theme/moon.css" id="theme"/>
+<link rel="stylesheet" href="./reveal.js/css/theme/simple.css" id="theme"/>
 
 <link rel="stylesheet" href="./local.css"/>
 
@@ -28,66 +28,53 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Wikipédia, wikidata et les données culturelles</h1><h2 class="author">Bastien Guerry</h2><p class="date">Created: 2019-02-10 dim. 18:16</p>
+<section id="sec-title-slide"><h1 class="title">Wikipédia, wikidata et les données culturelles</h1><h2 class="author">Bastien Guerry</h2><h2 class="date">Novembre 2017</h2><p class="date">Created: 2019-02-10 dim. 18:27</p>
 </section>
 <section id="table-of-contents">
 <div id="table-of-contents">
 <h2>Table des matières</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-org4bf6487">Présentation de Wikipédia</a></li>
-<li><a href="#/slide-org1613cdf">Les données culturelles sur Wikipédia</a></li>
-<li><a href="#/slide-org683dddb">Présentation de Wikidata</a></li>
-<li><a href="#/slide-org83fe942">Les données culturelles dans les projets Wikimedia</a></li>
-<li><a href="#/slide-orgec467c3">Quel est l’intérêt de Wikidata pour le MC ?</a></li>
-<li><a href="#/slide-org07a7fa0">Quel est l’intérêt des données du ministère de la culture pour Wikidata ?</a></li>
-<li><a href="#/slide-orgec5a60a">Ressources</a></li>
+<li><a href="#/slide-org6d1f781">Présentation de Wikipédia</a></li>
+<li><a href="#/slide-orgd57ba6b">Les données culturelles sur Wikipédia</a></li>
+<li><a href="#/slide-org4b51488">Présentation de Wikidata</a></li>
+<li><a href="#/slide-org338aebe">Les données culturelles dans les projets Wikimedia</a></li>
+<li><a href="#/slide-org98e304b">Quel est l’intérêt de Wikidata pour le MC ?</a></li>
+<li><a href="#/slide-org8142d58">Quel est l’intérêt des données du ministère de la culture pour Wikidata ?</a></li>
+<li><a href="#/slide-orgb81eeee">Ressources</a></li>
 </ul>
 </div>
 </div>
 </section>
 
 <section>
-<section id="slide-org4bf6487">
-<h2 id="org4bf6487">Présentation de Wikipédia</h2>
+<section id="slide-org6d1f781">
+<h2 id="org6d1f781">Présentation de Wikipédia</h2>
 </section>
-</section>
-<section>
-<section id="slide-org1109568">
-<h3 id="org1109568">Les origines de Wikipédia</h3>
-<dl>
-<dt>GNUpedia</dt><dd>proposé en 1999 par Stallman et lancé en 2001.</dd>
+<section id="slide-org3db7835">
+<h3 id="org3db7835">Les origines de Wikipédia</h3>
+<ul>
+<li><b>GNUpedia</b> : proposé en 1999 par Stallman et lancé en 2001.</li>
+<li><b>Nupedia</b> : fondée par L. Sanger et J. Wales en 2000, fermée en 2003.</li>
+<li><b>Wikipédia</b> : mis en place par L. Sanger en janvier 2001 intialement pour servir de sas d’entrée pour Nupédia.</li>
+<li><b>Citizendium</b> : projet d’encyclopédie en ligne lancé en 2006 par L. Sanger.</li>
 
-<dt>Nupedia</dt><dd>fondée par L. Sanger et J. Wales en 2000, fermée en 2003.</dd>
-
-<dt>Wikipédia</dt><dd>mis en place par L. Sanger en janvier 2001 intialement
-pour servir de sas d’entrée pour Nupédia.</dd>
-
-<dt>Citizendium</dt><dd>projet d’encyclopédie en ligne lancé en 2006 par
-L. Sanger.</dd>
-
-</dl>
+</ul>
 
 </section>
-</section>
-<section>
-<section id="slide-org668c874">
-<h3 id="org668c874">Le but de Wikipédia</h3>
-<p>
-Une encyclopédie libre et collaborative pour <b>collecter</b> et <b>diffuser</b>
-l’ensemble des connaissances disponibles.
-</p>
+<section id="slide-orgb990310">
+<h3 id="orgb990310">Le but de Wikipédia</h3>
+<ul>
+<li>Une encyclopédie libre et collaborative pour <b>collecter</b> et <b>diffuser</b>
+l’ensemble des connaissances disponibles.</li>
+<li>Wikipédia n’est pas un espace de <b>production</b> de la connaissance, elle
+reste une source secondaire.</li>
 
-<p>
-Wikipédia n’est pas un espace de <b>production</b> de la connaissance, elle
-reste une source secondaire.
-</p>
+</ul>
 
 </section>
-</section>
-<section>
-<section id="slide-org7616526">
-<h3 id="org7616526">Les principes fondateurs de Wikipédia</h3>
+<section id="slide-org2d37d36">
+<h3 id="org2d37d36">Les principes fondateurs de Wikipédia</h3>
 <ul>
 <li>Wikipédia est une encyclopédie</li>
 <li>Wikipédia recherche la neutralité de point de vue</li>
@@ -98,22 +85,17 @@ reste une source secondaire.
 </ul>
 
 </section>
-</section>
-<section>
-<section id="slide-org175d2b0">
-<h3 id="org175d2b0">Fonctionnement basique de Wikipédia</h3>
+<section id="slide-orge9ce83e">
+<h3 id="orge9ce83e">Fonctionnement basique de Wikipédia</h3>
 <ul>
 <li>La modération <b>a posteriori</b> (exemple).</li>
-
 <li>Les administrateurs n’ont qu’un rôle <b>technique</b>, pas <b>éditorial</b>.</li>
 
 </ul>
 
 </section>
-</section>
-<section>
-<section id="slide-orga9717f0">
-<h3 id="orga9717f0">Quelques chiffres sur la wikipédia francophone</h3>
+<section id="slide-orgd0449b0">
+<h3 id="orgd0449b0">Quelques chiffres sur la wikipédia francophone</h3>
 <p>
 Chiffres à la date du 8 novembre 2017 :
 </p>
@@ -129,41 +111,30 @@ Chiffres à la date du 8 novembre 2017 :
 </ul>
 
 <p>
-Wikipédia est le cinquième site le plus visité.
-</p>
-
-<p>
-Source : <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Statistiques">https://fr.wikipedia.org/wiki/Wikipédia:Statistiques</a>
+Wikipédia est le cinquième site le plus visité (<a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Statistiques">source</a>).
 </p>
 
 </section>
-</section>
-<section>
-<section id="slide-org4825ece">
-<h3 id="org4825ece">Où sont hébergées les données ?</h3>
+<section id="slide-org76971a5">
+<h3 id="org76971a5">Où sont hébergées les données ?</h3>
 <p>
 Aux États-Unis, par la Wikimedia Foundation.
 </p>
 
 </section>
-</section>
-<section>
-<section id="slide-org3ecd07e">
-<h3 id="org3ecd07e">Quelle est la différence entre Wikipédia et Wikimedia ?</h3>
-<p>
-Wikipédia est l’un des projets Wikimédia.
-</p>
+<section id="slide-orgefeee35">
+<h3 id="orgefeee35">Quelle est la différence entre Wikipédia et Wikimedia ?</h3>
+<ul>
+<li>Wikipédia est l’un des projets Wikimédia.</li>
 
-<p>
-« Wikimedia » est le nom du mouvement réunissant les salariés de la
-fondation américaine et des « chapitres » régionaux.
-</p>
+<li>« Wikimedia » est le nom du mouvement réunissant les salariés de la
+fondation américaine et des « chapitres » régionaux.</li>
+
+</ul>
 
 </section>
-</section>
-<section>
-<section id="slide-org37297d0">
-<h3 id="org37297d0">Quels sont les autres projets ?</h3>
+<section id="slide-org87139b3">
+<h3 id="org87139b3">Quels sont les autres projets ?</h3>
 <ul>
 <li>Wikimedia Commons</li>
 <li>Wikidata</li>
@@ -173,61 +144,47 @@ fondation américaine et des « chapitres » régionaux.
 <li>Wikiquote</li>
 <li>Wikivoyage</li>
 <li>&#x2026;</li>
+<li>Voir la <a href="https://wikimediafoundation.org/wiki/Nos_projets">liste des projets</a>.</li>
 
 </ul>
 
-<p>
-Voir la <a href="https://wikimediafoundation.org/wiki/Nos_projets">liste des projets</a>.
-</p>
-
 </section>
-</section>
-<section>
-<section id="slide-orgf1eab00">
-<h3 id="orgf1eab00">Comment éditer Wikipédia ?</h3>
+<section id="slide-orge672e49">
+<h3 id="orge672e49">Comment éditer Wikipédia ?</h3>
 <p>
 [Démonstration]
 </p>
 
 </section>
-</section>
-<section>
-<section id="slide-org5a7ab8e">
-<h3 id="org5a7ab8e">Quelques concepts (1/2)</h3>
-<dl>
-<dt>Les wikiprojets (ou projets)</dt><dd><a href="https://fr.wikipedia.org/wiki/Projet:Monuments_historiques">https://fr.wikipedia.org/wiki/Projet:Monuments_historiques</a></dd>
+<section id="slide-org3b633ba">
+<h3 id="org3b633ba">Quelques concepts (1/2)</h3>
+<ul>
+<li>Les wikiprojets (ou projets) : <a href="https://fr.wikipedia.org/wiki/Projet:Monuments_historiques">https://fr.wikipedia.org/wiki/Projet:Monuments_historiques</a></li>
+<li>Les portails : <a href="https://fr.wikipedia.org/wiki/Portail:Monuments_historiques">https://fr.wikipedia.org/wiki/Portail:Monuments_historiques</a></li>
+<li>Les catégories : [ [Catégorie:Base de données sur Internet]]</li>
+<li>Les modèles : {{Portail|informatique|monuments historiques}}</li>
 
-<dt>Les portails</dt><dd><a href="https://fr.wikipedia.org/wiki/Portail:Monuments_historiques">https://fr.wikipedia.org/wiki/Portail:Monuments_historiques</a></dd>
-
-<dt>Les catégories</dt><dd>[ [Catégorie:Base de données sur Internet]]</dd>
-
-<dt>Les modèles</dt><dd>{{Portail|informatique|monuments historiques}}</dd>
-
-</dl>
+</ul>
 
 </section>
-</section>
-<section>
-<section id="slide-orge44d78d">
-<h3 id="orge44d78d">Quelques concepts (2/2)</h3>
-<dl>
-<dt>Les infobox</dt><dd>les encarts avec des données structurées</dd>
+<section id="slide-org952b95d">
+<h3 id="org952b95d">Quelques concepts (2/2)</h3>
+<ul>
+<li><b>Les infobox</b> : les encarts avec des données structurées</li>
 
-<dt>Les liens interwikis</dt><dd>un lien entre deux projets, par exemple
-entre le wiktionnaire et wikipédia.  Voir <a href="https://fr.wikipedia.org/wiki/Aide:Lien_interwiki">la page de documentation</a>
-sur wikipédia.</dd>
+<li><b>Les liens interwikis</b> : un lien entre deux projets, par exemple entre
+le wiktionnaire et wikipédia.  Voir <a href="https://fr.wikipedia.org/wiki/Aide:Lien_interwiki">la page de documentation</a> sur
+wikipédia.</li>
 
-<dt>Les liens interlangues</dt><dd>un lien d’un projet (ex: wikipédia) dans
+<li><b>Les liens interlangues</b> : un lien d’un projet (ex: wikipédia) dans
 une langue vers le même projet (wikipédia) dans une autre langue.
-Voir <a href="https://fr.wikipedia.org/wiki/Aide:Lien_interlangue">la page de documentation</a> sur wikipédia.</dd>
+Voir <a href="https://fr.wikipedia.org/wiki/Aide:Lien_interlangue">la page de documentation</a> sur wikipédia.</li>
 
-</dl>
+</ul>
 
 </section>
-</section>
-<section>
-<section id="slide-org25c60f1">
-<h3 id="org25c60f1">Exemple de contenu littéral d’une infobox</h3>
+<section id="slide-org462f077">
+<h3 id="org462f077">Exemple de contenu littéral d’une infobox</h3>
 <pre class="example">
 {{Infobox Jeu de données
 | nom = 
@@ -244,38 +201,36 @@ Voir <a href="https://fr.wikipedia.org/wiki/Aide:Lien_interlangue">la page de do
 </section>
 </section>
 <section>
-<section id="slide-org1613cdf">
-<h2 id="org1613cdf">Les données culturelles sur Wikipédia</h2>
-<p>
-Statistiques ?
-</p>
+<section id="slide-orgd57ba6b">
+<h2 id="orgd57ba6b">Les données culturelles sur Wikipédia</h2>
+<ul>
+<li>Statistiques sur le projet « Monuments historiques » :
+<a href="https://fr.wikipedia.org/wiki/Projet:Monuments_historiques">https://fr.wikipedia.org/wiki/Projet:Monuments_historiques</a></li>
 
-<p>
-<a href="https://fr.wikipedia.org/wiki/Projet:Monuments_historiques">https://fr.wikipedia.org/wiki/Projet:Monuments_historiques</a>
-</p>
+</ul>
 
 </section>
 </section>
 <section>
-<section id="slide-org683dddb">
-<h2 id="org683dddb">Présentation de Wikidata</h2>
+<section id="slide-org4b51488">
+<h2 id="org4b51488">Présentation de Wikidata</h2>
+<p>
+&#x2026; faire défiler vers le bas !
+</p>
+
 </section>
-</section>
-<section>
-<section id="slide-orgb44b4d0">
-<h3 id="orgb44b4d0">Le lien wikidata sur les pages de Wikipédia</h3>
+<section id="slide-orgf3cbe66">
+<h3 id="orgf3cbe66">Le lien wikidata sur les pages de Wikipédia</h3>
 <p>
 Voir dans la colonne de gauche : <a href="https://fr.wikipedia.org/w/index.php?title=Victor_Hugo">Victor Hugo</a>
 </p>
 
 </section>
-</section>
-<section>
-<section id="slide-org8ec5dc9">
-<h3 id="org8ec5dc9">Problèmes à résoudre</h3>
+<section id="slide-org19b8512">
+<h3 id="org19b8512">Problèmes à résoudre</h3>
 <dl>
 <dt>Problème #1</dt><dd>Comment tirer parti des connaissances
-semi-structurées de Wikipédia ?
+semi-structurées de Wikipédia ?
 
 <ul>
 <li>Les infoboxes</li>
@@ -285,25 +240,21 @@ semi-structurées de Wikipédia ?
 
 </ul></dd>
 
-<dt>Problème #2</dt><dd>Comment interroger ces données ?</dd>
+<dt>Problème #2</dt><dd>Comment interroger ces données ?</dd>
 
 </dl>
 
 </section>
-</section>
-<section>
-<section id="slide-orga647030">
-<h3 id="orga647030">Web sémantique ?</h3>
+<section id="slide-org5da96a2">
+<h3 id="org5da96a2">Web sémantique ?</h3>
 <ul>
 <li>Langage naturel : Sujet / Verbe / Complément</li>
 
 </ul>
 
 </section>
-</section>
-<section>
-<section id="slide-org584a26d">
-<h3 id="org584a26d">Les acceptions de « prédicat »</h3>
+<section id="slide-org1776379">
+<h3 id="org1776379">Les acceptions de « prédicat »</h3>
 <ul>
 <li>Aristote : le prédicat est ce que l’on dit du sujet.  Par
 exemple : Socrate <b>mange des pommes</b> ou Socrate <b>est un homme</b>.
@@ -329,10 +280,8 @@ pour tout y, x est ami avec y » : &exist; x &forall; y amis(x,y)
 </ul>
 
 </section>
-</section>
-<section>
-<section id="slide-org9b44346">
-<h3 id="org9b44346">Un « prédicat » en web sémantique</h3>
+<section id="slide-orgfa9a647">
+<h3 id="orgfa9a647">Un « prédicat » en web sémantique</h3>
 <ul>
 <li><p>
 En web sémantique, une affirmation est un <b>prédicat binaire</b> (voir
@@ -363,10 +312,8 @@ scientifique.
 </ul>
 
 </section>
-</section>
-<section>
-<section id="slide-org73b5b57">
-<h3 id="org73b5b57">Exemple de code HTML</h3>
+<section id="slide-orgcd6060b">
+<h3 id="orgcd6060b">Exemple de code HTML</h3>
 <pre  class="example">
 &lt;html&gt;
 &lt;head&gt;
@@ -381,10 +328,8 @@ scientifique.
 </pre>
 
 </section>
-</section>
-<section>
-<section id="slide-org95149ff">
-<h3 id="org95149ff">Exemple de code HTML « sémantisé »</h3>
+<section id="slide-org89cf7dd">
+<h3 id="org89cf7dd">Exemple de code HTML « sémantisé »</h3>
 <pre class="example">
 &lt;html&gt;
 &lt;head&gt;
@@ -399,10 +344,8 @@ scientifique.
 </pre>
 
 </section>
-</section>
-<section>
-<section id="slide-org48050a9">
-<h3 id="org48050a9">Wikidata est constituée de <b>déclarations</b> sur des <b>entités</b></h3>
+<section id="slide-org75d2a1e">
+<h3 id="org75d2a1e">Wikidata est constituée de <b>déclarations</b> sur des <b>entités</b></h3>
 <p>
 Quelques définitions :
 </p>
@@ -430,10 +373,8 @@ glossaire des termes.
 </p>
 
 </section>
-</section>
-<section>
-<section id="slide-orgeb57e41">
-<h3 id="orgeb57e41">L’évolution de Wikidata</h3>
+<section id="slide-org7d0eece">
+<h3 id="org7d0eece">L’évolution de Wikidata</h3>
 <ul>
 <li>Ajout d’entités</li>
 <li>Ajout de propriétés</li>
@@ -442,10 +383,8 @@ glossaire des termes.
 </ul>
 
 </section>
-</section>
-<section>
-<section id="slide-orgee9e274">
-<h3 id="orgee9e274">L’accès aux données de Wikidata</h3>
+<section id="slide-org0156de9">
+<h3 id="org0156de9">L’accès aux données de Wikidata</h3>
 <ul>
 <li>Via l’API (<a href="https://www.wikidata.org/w/api.php">https://www.wikidata.org/w/api.php</a>)</li>
 <li>Via le SparQL endpoint</li>
@@ -465,18 +404,14 @@ Source : <a href="https://www.wikidata.org/wiki/Wikidata:Data_access/fr">https:/
 </section>
 </section>
 <section>
-<section id="slide-org83fe942">
-<h2 id="org83fe942">Les données culturelles dans les projets Wikimedia</h2>
+<section id="slide-org338aebe">
+<h2 id="org338aebe">Les données culturelles dans les projets Wikimedia</h2>
 </section>
+<section id="slide-org57e0f79">
+<h3 id="org57e0f79"><a href="http://www.zone47.com/crotos/">http://www.zone47.com/crotos/</a></h3>
 </section>
-<section>
-<section id="slide-org222cd02">
-<h3 id="org222cd02"><a href="http://www.zone47.com/crotos/">http://www.zone47.com/crotos/</a></h3>
-</section>
-</section>
-<section>
-<section id="slide-org1e87586">
-<h3 id="org1e87586">Les données culturelles sur Wiki Loves Monuments</h3>
+<section id="slide-org5738580">
+<h3 id="org5738580">Les données culturelles sur Wiki Loves Monuments</h3>
 <p>
 <a href="https://wikilovesmonuments.fr">https://wikilovesmonuments.fr</a>
 </p>
@@ -487,31 +422,21 @@ concours WLM : <a href="https://tools.wmflabs.org/monumental/#/object/2981">http
 </p>
 
 </section>
-</section>
-<section>
-<section id="slide-orgbe41663">
-<h3 id="orgbe41663">Les données culturelles sur Wikipédia</h3>
+<section id="slide-org4911612">
+<h3 id="org4911612">Les données culturelles sur Wikipédia</h3>
 <p>
 Exemple : Le wikiprojet <a href="https://fr.wikipedia.org/wiki/Projet:Monuments_historiques">monument historique</a>.
 </p>
 
 </section>
-</section>
-<section>
-<section id="slide-org58f5139">
-<h3 id="org58f5139">Les données culturelles sur Wikidata</h3>
-<p>
-"80% des données" (cf. présentation Wikidatacon 2017)
-</p>
+<section id="slide-orgaa2183f">
+<h3 id="orgaa2183f">Les données culturelles sur Wikidata</h3>
+<ul>
+<li>"80% des données" (cf. présentation Wikidatacon 2017)</li>
+<li>Exemple de mise en forme des données sur <a href="https://tools.wmflabs.org/reasonator/?q=Q1339">reasonator</a>.</li>
+<li>Exemple de requête :</li>
 
-<p>
-Exemple de mise en forme des données
-<a href="https://tools.wmflabs.org/reasonator/?q=Q1339">https://tools.wmflabs.org/reasonator/?q=Q1339</a>
-</p>
-
-<p>
-Exemple de requête :
-</p>
+</ul>
 
 <pre class="example">
 #Paintings made on places that are not a work location of Van Gogh
@@ -528,17 +453,12 @@ WHERE {?item wdt:P31 wd:Q3305213 .
 </pre>
 
 
-<p>
-Exemple de réutilisation : <a href="http://histropedia.com/timeline">http://histropedia.com/timeline</a>
-</p>
+<ul>
+<li>Exemple de réutilisation : <a href="http://histropedia.com/timeline">http://histropedia.com/timeline</a></li>
+<li>Voir la <a href="https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%3Fid%20WHERE%20%7B%0A%09%3Fitem%20wdt%3AP481%20%3Fid%20.%0A%09SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%22%20%7D%0A%7D">liste des données ayant un identifiant Palissy.</a></li>
+<li><a href="https://www.wikidata.org/wiki/Wikidata:WikiProject_sum_of_all_paintings/Catalog">https://www.wikidata.org/wiki/Wikidata:WikiProject_sum_of_all_paintings/Catalog</a></li>
 
-<p>
-Voir la <a href="https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%3Fid%20WHERE%20%7B%0A%09%3Fitem%20wdt%3AP481%20%3Fid%20.%0A%09SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%22%20%7D%0A%7D">liste des données ayant un identifiant Palissy.</a>
-</p>
-
-<p>
-<a href="https://www.wikidata.org/wiki/Wikidata:WikiProject_sum_of_all_paintings/Catalog">https://www.wikidata.org/wiki/Wikidata:WikiProject_sum_of_all_paintings/Catalog</a>
-</p>
+</ul>
 
 <pre class="example">
 SELECT ?item ?catcode WHERE { ?item p:P528 [ pq:P972 wd:Q35556353 ; ps:P528 ?catcode]. } ORDER BY xsd:integer(?catcode)
@@ -547,39 +467,32 @@ SELECT ?item ?catcode WHERE { ?item p:P528 [ pq:P972 wd:Q35556353 ; ps:P528 ?cat
 </section>
 </section>
 <section>
-<section id="slide-orgec467c3">
-<h2 id="orgec467c3">Quel est l’intérêt de Wikidata pour le MC ?</h2>
+<section id="slide-org98e304b">
+<h2 id="org98e304b">Quel est l’intérêt de Wikidata pour le MC ?</h2>
 <ul>
 <li>Wikidata permet d’exposer les données du MC plus largement.</li>
-
-<li>Wikidata permet de faire des recherches (de la recherche ?) :
-exemple, les peintres <a href="https://www.wikidata.org/wiki/Wikidata:WikiProject_sum_of_all_paintings/Top_creators_by_number_of_paintings%0A">les plus prolifiques</a>.</li>
-
-<li>Wikidata peut être utilisé pour obtenir des traductions des labels
-existants.</li>
+<li>Wikidata permet de faire des recherches (de la recherche ?) : exemple, les peintres <a href="https://www.wikidata.org/wiki/Wikidata:WikiProject_sum_of_all_paintings/Top_creators_by_number_of_paintings%0A">les plus prolifiques</a>.</li>
+<li>Wikidata peut être utilisé pour obtenir des traductions des labels existants.</li>
 
 </ul>
 
 </section>
 </section>
 <section>
-<section id="slide-org07a7fa0">
-<h2 id="org07a7fa0">Quel est l’intérêt des données du ministère de la culture pour Wikidata ?</h2>
+<section id="slide-org8142d58">
+<h2 id="org8142d58">Quel est l’intérêt des données du ministère de la culture pour Wikidata ?</h2>
 <ul>
 <li>Le ministère de la culture peut contribuer à l’ajout d’entités.</li>
-
 <li>Le ministère de la culture peut contribuer à l’ajout de propriétés.</li>
-
-<li>Le ministère de la culture peut enrichir les données existantes (ex:
-Palissy).</li>
+<li>Le ministère de la culture peut enrichir les données existantes (ex: Palissy).</li>
 
 </ul>
 
 </section>
 </section>
 <section>
-<section id="slide-orgec5a60a">
-<h2 id="orgec5a60a">Ressources</h2>
+<section id="slide-orgb81eeee">
+<h2 id="orgb81eeee">Ressources</h2>
 <ul>
 <li><a href="https://fr.slideshare.net/_Emw/an-ambitious-wikidata-tutorial">https://fr.slideshare.net/_Emw/an-ambitious-wikidata-tutorial</a></li>
 
@@ -604,8 +517,8 @@ slideNumber: 'c',
 rollingLinks: false,
 keyboard: true,
 overview: true,
-width: 1200,
-height: 800,
+width: 1400,
+height: 900,
 margin: 0.10,
 minScale: 0.50,
 maxScale: 1.50,
