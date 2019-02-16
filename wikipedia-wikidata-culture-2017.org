@@ -4,6 +4,8 @@
 #+date: Novembre 2017
 #+options: html-postamble:nil html-preamble:nil toc:nil
 # #+latex_header: \hypersetup{colorlinks=true}
+#+BEAMER_HEADER: \definecolor{links}{HTML}{0000A0}
+#+BEAMER_HEADER: \hypersetup{colorlinks=,linkcolor=,urlcolor=links}
 
 * Les origines de Wikipédia
 
