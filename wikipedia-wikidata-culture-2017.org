@@ -281,8 +281,10 @@ Exemple : Le wikiprojet [[https://fr.wikipedia.org/wiki/Projet:Monuments_histor
 - Le ministère de la culture peut enrichir les données existantes (ex:
   Palissy).
 
-* Ressources
+* Ressources et droits
 
 - https://fr.slideshare.net/_Emw/an-ambitious-wikidata-tutorial
 - https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples
 - https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual
+
+Cette présentation est disponible sous licence [[https://creativecommons.org/licenses/by-sa/4.0/][Creative Commons by-sa 4.0]].

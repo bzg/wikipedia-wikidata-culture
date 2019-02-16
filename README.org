@@ -1,0 +1,13 @@
+* Wikipédia, Wikidata et les données culturelles
+
+Présentation rapide de Wikipédia et Wikidata pour la publication de
+données culturelles, donnée en novembre 2017 au ministère de la
+culture.
+
+Les suggestions d’amélioration sont les bienvenues, n’hésitez pas à
+envoyer une `Pull Request` ou à m’écrire : `bzg AT bzg DOT fr`
+
+* Droits
+
+Cette présentation est disponible sous licence [[https://creativecommons.org/licenses/by-sa/4.0/][Creative Commons by-sa
+4.0]].
